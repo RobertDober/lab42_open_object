@@ -19,4 +19,10 @@ OpenObject an Immutable OpenStruct Enhancement
   o[:a] # => 42
   o.keys # => [:a]
   o.values # => [42]
+
+  p = o.merge a: 43, b: 44
+
+  p.a # => 43
+  p.b # => 44
+  o.a # => 42 !!!
 ```
