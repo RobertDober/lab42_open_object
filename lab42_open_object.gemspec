@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.licenses    = %w{Apache 2}
 
   s.required_ruby_version = '>= 2.3.1'
+  s.add_dependency 'forwarder2', '~> 0.2'
 
   s.add_development_dependency 'pry', '~> 0.11'
   s.add_development_dependency 'pry-byebug', '~> 3.5'
