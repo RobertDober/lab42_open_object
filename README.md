@@ -11,18 +11,29 @@ OpenObject an Immutable OpenStruct Enhancement
 
 ## Usage:
 
+### Basic Behavior
+
 ```ruby literate
   require 'lab42/open_object'
+  OpenObject = Lab42::OpenObject
 
   o = OpenObject.new a: 42
-  o.a # => 42
-  o[:a] # => 42
-  o.keys # => [:a]
-  o.values # => [42]
+  o.a #=> 42
+  o[:a] #=> 42
+  o.keys #=> [:a]
+  o.values #=> [42]
+```
 
+
+### Merging
+
+```ruby literate
+  o = OpenObject.new a: 42
   p = o.merge a: 43, b: 44
 
-  p.a # => 43
-  p.b # => 44
-  o.a # => 42 !!!
+  expect(p).to be_kind_of(OpenObject)
+
+  p.a #=> 43
+  p.b #=> 44
+  o.a #=> 42
 ```

@@ -15,6 +15,8 @@ GEM
     docile (1.1.5)
     forwarder2 (0.2.0)
     json (2.1.0)
+    lab42_literate (0.1.1)
+      rspec (~> 3.7)
     method_source (0.9.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -48,6 +50,7 @@ PLATFORMS
 
 DEPENDENCIES
   codeclimate-test-reporter (~> 1.0)
+  lab42_literate (~> 0.1)
   lab42_open_object!
   pry (~> 0.11)
   pry-byebug (~> 3.5)

@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry-byebug', '~> 3.5'
 
   s.add_development_dependency 'rspec', '~> 3.7'
+  s.add_development_dependency 'lab42_literate', '~> 0.1'
+
   s.add_development_dependency 'simplecov', '~> 0.15'
   s.add_development_dependency 'codeclimate-test-reporter', '~> 1.0'
 

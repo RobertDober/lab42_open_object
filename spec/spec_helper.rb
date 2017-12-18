@@ -17,7 +17,7 @@
 require 'simplecov'
 SimpleCov.start
 
-
+require 'lab42/literate'
 require 'lab42/open_object'
 
 OO = Lab42::OpenObject

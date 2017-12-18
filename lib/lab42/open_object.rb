@@ -2,11 +2,18 @@ require 'forwarder'
 
 module Lab42
   class OpenObject
+    require_relative 'open_object/hash_like'
+    include HashLike
+
     extend Forwarder
     forward_all :[], :keys, :length, :size, :values, to: :@data
 
     def [] key
       data.fetch(key)
+    end
+
+    def to_hash
+      @data
     end
 
     private
@@ -22,8 +29,6 @@ module Lab42
       end
       freeze
     end
-
-
 
   end
 end
