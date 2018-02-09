@@ -7,7 +7,7 @@
 [![Issue Count](https://codeclimate.com/github/RobertDober/lab42_open_object/badges/issue_count.svg)](https://codeclimate.com/github/RobertDober/lab42_open_object)
 [![Test Coverage](https://codeclimate.com/github/RobertDober/lab42_open_object/badges/coverage.svg)](https://codeclimate.com/github/RobertDober/lab42_open_object)
 
-OpenObject an Immutable OpenStruct Enhancement
+# OpenObject an Immutable OpenStruct Enhancement
 
 ## Usage:
 
@@ -36,4 +36,13 @@ OpenObject an Immutable OpenStruct Enhancement
   p.a #=> 43
   p.b #=> 44
   o.a #=> 42
+```
+
+# TStruct an Immutable Typed Struct
+
+```ruby literate
+  require 'lab42/tstruct'
+
+  class MyTyped < TStruct.new(name: String, flag: Boolean)
+  end
 ```
